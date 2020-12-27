@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30803.129
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Testing.csproj", "{865DE44F-DF66-4E4C-9C57-63A1DC604159}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security", "..\Security\Security.csproj", "{815AF615-A97E-4AD1-A7DF-D03BBFBE4449}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "..\Shared\Shared.csproj", "{1F512CEC-0C28-41BF-9604-22EFB560581A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865DE44F-DF66-4E4C-9C57-63A1DC604159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865DE44F-DF66-4E4C-9C57-63A1DC604159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865DE44F-DF66-4E4C-9C57-63A1DC604159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865DE44F-DF66-4E4C-9C57-63A1DC604159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{815AF615-A97E-4AD1-A7DF-D03BBFBE4449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815AF615-A97E-4AD1-A7DF-D03BBFBE4449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815AF615-A97E-4AD1-A7DF-D03BBFBE4449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815AF615-A97E-4AD1-A7DF-D03BBFBE4449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F512CEC-0C28-41BF-9604-22EFB560581A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F512CEC-0C28-41BF-9604-22EFB560581A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F512CEC-0C28-41BF-9604-22EFB560581A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F512CEC-0C28-41BF-9604-22EFB560581A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D5EF797-16EE-4ED4-A000-E69360DE29A2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,159 @@
+﻿{
+   "ContextClassName": "FalconContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "Models",
+   "ProjectRootNamespace": "DB",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[CheckPoints]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Checkpoints_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Customer]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Devices_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Document]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Documents_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Event]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Geofence]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Geofences_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Invoice]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Invoices_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Issue]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Issue_Types_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Local]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Locations_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Managements_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Message]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Note]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Notifications]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Notifications_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Options]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Orders]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Phone_Numbers_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Property]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Role]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[SWEvents]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Task]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Tasks_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Team]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[TourEnd]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Tours_Reference]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[TourStart]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[User]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[White]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNodaTime": false,
+   "UseSpatial": false,
+   "UseStoredProcedures": false
+}

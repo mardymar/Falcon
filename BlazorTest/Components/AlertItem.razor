@@ -1,0 +1,18 @@
+﻿<h5 class="btn @color">@theText</h5>
+
+@code {
+    [Parameter]
+    public string severity { get; set; }
+
+    [Parameter]
+    public string theText { get; set; }
+
+    string color = "";
+
+    protected override void OnInitialized()
+    {
+        int intSeverity = int.Parse(severity);
+        color = intSeverity == 2 ? "btn-danger" : intSeverity == 1 ? "btn-warning" : "btn-info";
+    }
+
+}

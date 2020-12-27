@@ -1,0 +1,95 @@
+﻿
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">Falcon Watcher</a>
+    <button class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="side-container">
+    <div class="side-dropdown">
+        <MatSelect Label="Alerts" @bind-Value="choice">
+            <MatOptionString Value="incidentsChoice">Incidents</MatOptionString>
+            <MatOptionString Value="guardsChoice">Guards</MatOptionString>
+            <MatOptionString Value="locationsChoice">Locations</MatOptionString>
+        </MatSelect>
+    </div>
+
+    @if (choice == "incidentsChoice")
+    {
+        <ul class="nav flex-column">
+
+            @for (int i = 0; i < incidents.Count; i++)
+            {
+                <li class="alert-item px-3">
+                    <a href="@incidents.Skip(i).FirstOrDefault().link">
+                        <AlertItem severity=@incidents.Skip(i).FirstOrDefault().severity theText=@incidents.Skip(i).FirstOrDefault().theText />
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+    else if (choice == "guardsChoice")
+    {
+        <ul class="nav flex-column">
+
+            @for (int i = 0; i < guards.Count; i++)
+            {
+                <li class="alert-item px-3">
+                    <a href="@guards.Skip(i).FirstOrDefault().Link">
+                        <GuardItem Text=@guards.Skip(i).FirstOrDefault().Text />
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+    else if (choice == "locationsChoice")
+    {
+        <ul class="nav flex-column">
+
+            @for (int i = 0; i < locations.Count; i++)
+            {
+                <li class="alert-item px-3">
+                    <a href="@locations.Skip(i).FirstOrDefault().Link">
+                        <GuardItem Text=@locations.Skip(i).FirstOrDefault().Text />
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+@code {
+    string choice = "incidentsChoice";
+    public List<IncidentModel> incidents = new List<IncidentModel>();
+    public List<GuardModel> guards = new List<GuardModel>();
+    public List<LocationModel> locations = new List<LocationModel>();
+
+
+
+
+    protected override void OnInitialized()
+    {
+        for(var i = 0; i < 10; i++)
+        {
+            incidents.Add(new IncidentModel());
+        }
+
+        incidents = incidents.OrderByDescending(o => o.severity).ToList();
+
+        for (var i = 0; i < 10; i++)
+        {
+            guards.Add(new GuardModel());
+        }
+
+        guards = guards.OrderBy(o => o.Text).ToList();
+
+        for (var i = 0; i < 10; i++)
+        {
+            locations.Add(new LocationModel());
+        }
+
+        locations = locations.OrderBy(o => o.Text).ToList();
+
+    }
+}
